@@ -4,7 +4,7 @@ $headerColor: #212121;
 $primaryText: White;
 
 header {
-    font-family: 'Roboto', sans-serif;
+
     padding: 2px 0;
     background-color: $headerColor;
     color: $primaryText;
@@ -29,11 +29,36 @@ header {
 
 }
 
-#header-icons {
+.header-text {
     display: inline-block;
+    text-align: left;
+}
+
+.header-logo {
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    background-image: url('../images/simjes.svg');
+}
+
+.header-icons {
+    height: 100px;
+    text-align: center;
+    font: 0/0 a;
+
+
     img {
+        margin: 10px;
         display: inline-block;
+        vertical-align: middle;
         width: 50px;
         height: 50px;
     }
+}
+
+.header-icons:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
 }
