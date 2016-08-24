@@ -8,15 +8,15 @@ import {Appbar, Container, Row, Col} from 'muicss/react';
 class HeaderBar extends React.Component {
     render() {
         return (
-
-            <Appbar className="mui--z2">
+            <Appbar className="mui--z2 header">
                 <Container>
                     <Row>
-                        <Col xs="12" md="6" lg="6" className="mui--text-center">
+                        <a href="#" className="mui--visible-xs-block mui--text-center"><div className="header-logo" /></a>
+                        <Col xs="12" md="6" lg="6" className="mui--text-center mui--hidden-xs">
                             <a href="#"><div className="header-logo" /></a>
                             <div className="header-text">
-                                <h1> Simon Jespersen</h1>
-                                <h4> Master student @ UiO </h4>
+                                <h1>Simon Jespersen</h1>
+                                <h4>Master student @ UiO </h4>
                             </div>
                         </Col>
                         <Col md="6" lg="6" className="mui--hidden-xs mui--hidden-sm">
@@ -30,18 +30,6 @@ class HeaderBar extends React.Component {
                     </Row>
                 </Container>
             </Appbar>
-            /*<header className="headerBar">
-
-                <img src={logo} alt="logo" height="80" width="80" />
-                <h2> Simon Jespersen</h2>
-                <h4> Master student @ UiO </h4>
-                <div id="header-icons">
-                    <img src={githubIcon} alt="Github" />
-                    <img src={androidIcon} alt="Google Play" />
-                    <img src={linkedinIcon} alt="Linkedin" />
-                    <img src={mailIcon} alt="Mail" />
-                </div>
-            </header>*/
         )
     }
 }
