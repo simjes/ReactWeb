@@ -49,6 +49,7 @@
     "karma-webpack": "^1.7.0",
     "minimist": "^1.2.0",
     "mocha": "^3.0.0",
+    "muicss": "^0.7.3",
     "node-sass": "^3.8.0",
     "null-loader": "^0.1.1",
     "open": "0.0.5",
@@ -64,11 +65,8 @@
   },
   "dependencies": {
     "core-js": "^2.0.0",
-    "material-ui": "^0.15.4",
     "normalize.css": "^4.0.0",
     "react": "^15.0.0",
-    "react-dom": "^15.0.0",
-    "react-grid-system": "^1.2.2",
-    "react-tap-event-plugin": "^1.0.0"
+    "react-dom": "^15.0.0"
   }
 }
