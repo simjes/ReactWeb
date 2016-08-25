@@ -1,4 +1,8 @@
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 //header
 .header {
     height: 100px;
@@ -7,7 +11,6 @@
 .header-text {
     display: inline-block;
     text-align: left;
-    font-family: 'Roboto', sans-serif;
     h1 {
         margin-bottom: -10px;
     }
@@ -44,7 +47,7 @@
 
 
 //card  TODO: media queries
-.card {
+/*.card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 30%;
@@ -76,4 +79,4 @@
     padding: 0.25em 0.75em;
     position: absolute;
   }
-}
+}*/
