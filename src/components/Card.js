@@ -12,9 +12,8 @@ class Card extends React.Component {
 
     render() {
         const links = this.renderLinks(this.props.content.links);
-        console.log(links);
         return (
-            <div className="card small">
+            <div className="card">
                 <div className="card-image">
                     <img src={this.props.content.image} />
                     <span className="card-title">{this.props.content.title}</span>
