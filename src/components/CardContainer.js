@@ -44,16 +44,45 @@ var test2 = {
 }
 
 var allProjects = [test2, test2, test, test, test2, test2, test, test2, test];
-
+var numberOfCols = 3;
 //TODO: get card info, find nr of columns, rename stuff, clean up
 
 class CardContainer extends React.Component {
-    sortCards() {
-        let cards = [];
-        let numberOfCols = 3; //TODO get number of columns
+
+    componentWillMount() {
+        this.updateNumberOfColumns();
+        //this.loadBlocksFromServer();
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', ::this.updateNumberOfColumns);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', ::this.updateNumberOfColumns);
+    }
+
+    updateNumberOfColumns() {
+        var windowWidth = window.innerWidth;
+        var lastNumberOfCols = numberOfCols;
+        if (windowWidth <= 767) {
+            numberOfCols = 1;
+        } else if (windowWidth <= 991) {
+            numberOfCols = 2;
+        } else {
+            numberOfCols = 3
+        }
+
+        if (lastNumberOfCols != numberOfCols) {
+          this.forceUpdate();
+        }
+
+    }
+
+    assignToColumn() {
+        let colCardInfo = [];
         let numberOfCards = allProjects.length;
         let cardsPerCol = Math.ceil(numberOfCards / numberOfCols);
-        console.log('cards per col: ' + cardsPerCol);
         let cardCounter = 0;
 
         for (var i = 0; i < numberOfCols; i++) {
@@ -64,28 +93,25 @@ class CardContainer extends React.Component {
                     cardCounter++;
                 }
             }
-            cards.push(cardOfColumn);
+            colCardInfo.push(cardOfColumn);
         }
-        return cards;
+        return colCardInfo;
     }
 
     renderCards() {
+        var colCardInfo = this.assignToColumn();
+        var colToRender = [];
 
-        var allCardInfo = this.sortCards();
-        console.log(allCardInfo);
-        var finishedCards = [];
-
-        allCardInfo.forEach( (column, index) => {
-            finishedCards.push(
-                <Col md="6" lg='4' key={index}>
+        colCardInfo.forEach( (column, index) => {
+            colToRender.push(
+                <Col xs="12" sm="12" md="6" lg='4' key={index}>
                     {column.map((card, i) => {
                         return <Card content={card} key={i}/>;
                     })}
                 </Col>
             )
         });
-        console.log(finishedCards);
-        return finishedCards;
+        return colToRender;
     }
 
     render() {

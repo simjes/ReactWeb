@@ -13,16 +13,18 @@ class Card extends React.Component {
     render() {
         const links = this.renderLinks(this.props.content.links);
         return (
-            <div className="card">
-                <div className="card-image">
-                    <img src={this.props.content.image} />
-                    <span className="card-title">{this.props.content.title}</span>
-                </div>
-                <div className="card-content">
-                    <p>{this.props.content.description}</p>
-                </div>
-                <div className="card-action mui--text-center">
-                    {links}
+            <div className="bottom-card-filler">
+                <div className="card">
+                    <div className="card-image">
+                        <img src={this.props.content.image} />
+                        <span className="card-title">{this.props.content.title}</span>
+                    </div>
+                    <div className="card-content">
+                        <p>{this.props.content.description}</p>
+                    </div>
+                    <div className="card-action mui--text-center">
+                        {links}
+                    </div>
                 </div>
             </div>
         )
