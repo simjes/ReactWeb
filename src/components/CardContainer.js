@@ -3,56 +3,12 @@ import Card from 'components/Card';
 import {Container, Row, Col} from 'muicss/react';
 var ProjectInfo = require('sources/ProjectInfo.json');
 
-var cardImage = require('../images/firestorm.png');
-var test = {
-    image: cardImage,
-    title: 'super cool title for a sick project',
-    description: 'sickest stuff everdaskdklasøkdløaksldøkløsakdlø',
-    links: [
-        {
-            link: 'http://www.tek.no',
-            title: 'android'
-        },
-        {
-            link: 'http://www.tek.no',
-            title: 'youtube'
-        },
-        {
-            link: 'http://www.tek.no',
-            title: 'Github'
-        }
-    ]
-}
-
-var test2 = {
-    image: cardImage,
-    title: 'super cool title for a sick project',
-    description: 'sickest stuff everdaskdklasøkdløaksldøkløsakdckest stuff everdaskdklasøkdløaksldøkløsakdckest stuff everdaskdklasøkdløaksldøkløsakdckest stuff everdaskdklasøkdløaksldøkløsakdckest stuff everdaskdklasøkdløaksldøkløsakdlø',
-    links: [
-        {
-            link: 'http://www.tek.no',
-            title: 'android'
-        },
-        {
-            link: 'http://www.tek.no',
-            title: 'youtube'
-        },
-        {
-            link: 'http://www.tek.no',
-            title: 'Github'
-        }
-    ]
-}
-
-var allProjects = [test2, test2, test, test, test2, test2, test, test2, test];
 var numberOfCols = 3;
-//TODO: get card info, find nr of columns, rename stuff, clean up
 
 class CardContainer extends React.Component {
 
     componentWillMount() {
         this.updateNumberOfColumns();
-        //this.loadBlocksFromServer();
     }
 
     componentDidMount() {
@@ -80,9 +36,9 @@ class CardContainer extends React.Component {
 
     }
 
-    assignToColumn() {
+    assignToColumn(projects) {
         let colCardInfo = [];
-        let numberOfCards = allProjects.length;
+        let numberOfCards = projects.length;
         let cardsPerCol = Math.ceil(numberOfCards / numberOfCols);
         let cardCounter = 0;
 
@@ -90,7 +46,7 @@ class CardContainer extends React.Component {
             var cardOfColumn = [];
             for (var j = 0; j < cardsPerCol; j++) {
                 if (cardCounter < numberOfCards) {
-                    cardOfColumn[j] = allProjects[cardCounter];
+                    cardOfColumn[j] = projects[cardCounter];
                     cardCounter++;
                 }
             }
@@ -99,8 +55,8 @@ class CardContainer extends React.Component {
         return colCardInfo;
     }
 
-    renderCards() {
-        var colCardInfo = this.assignToColumn();
+    renderCards(projects) {
+        var colCardInfo = this.assignToColumn(projects);
         var colToRender = [];
 
         colCardInfo.forEach( (column, index) => {
@@ -116,8 +72,7 @@ class CardContainer extends React.Component {
     }
 
     render() {
-        const cards = this.renderCards();
-        console.log(ProjectInfo);
+        const cards = this.renderCards(ProjectInfo.projects);
         return (
             <Container>
                 <Row>
