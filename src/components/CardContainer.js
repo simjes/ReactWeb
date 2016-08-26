@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from 'components/Card';
 import {Container, Row, Col} from 'muicss/react';
+var ProjectInfo = require('sources/ProjectInfo.json');
 
 var cardImage = require('../images/firestorm.png');
 var test = {
@@ -116,7 +117,7 @@ class CardContainer extends React.Component {
 
     render() {
         const cards = this.renderCards();
-
+        console.log(ProjectInfo);
         return (
             <Container>
                 <Row>

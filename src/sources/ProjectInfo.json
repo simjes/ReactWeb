@@ -1,0 +1,140 @@
+{
+  "projects": [{
+    "title": "WeatherFuse",
+    "tags": "Fuse, OpenWeatherMap API",
+    "description": "Cross-platform app to check the weather based on your GPS location. Uses data from OpenWeatherMap.org. Testing out Fuse.",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/WeatherFuse",
+      "title": "Github"
+    }]
+  }, {
+    "title": "ShopListSwift",
+    "tags": "Swift iOS",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/ShopListSwift",
+      "title": "Github"
+    }]
+  }, {
+    "title": "Angular page",
+    "tags": "AngularJS",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/ngMaterial-website",
+      "title": "Github"
+    }]
+  }, {
+    "title": "DHIS2 tools",
+    "tags": "Ubuntu Package",
+    "description": "",
+    "image": "",
+    "links": []
+  }, {
+    "title": "ShopList",
+    "tags": "Android",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/ShopList",
+      "title": "Github"
+    }, {
+      "link": "https://play.google.com/store/apps/details?id=com.simjes.shoplist",
+      "title": "Android"
+    }]
+  }, {
+    "title": "Geek Events App",
+    "tags": "Ionic",
+    "description": "",
+    "image": "",
+    "links": []
+  }, {
+    "title": "Event Server",
+    "tags": "Node, MongoDB",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/gevents_server",
+      "title": "Github"
+    }]
+  }, {
+    "title": "Organisation Unit Manager",
+    "tags": "DHIS2 webapp",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/dhis2-orgunit",
+      "title": "Github"
+    }]
+  }, {
+    "title": "Streemer",
+    "tags": "Ionic",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/Streemer",
+      "title": "Github"
+    }]
+  }, {
+    "title": "SimCV",
+    "tags": "Android",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/OpenCV-Bachelor",
+      "title": "Github"
+    }, {
+      "link": "https://www.youtube.com/watch?v=oCViAhgrZn0",
+      "title": "Youtube"
+    }, {
+      "link": "https://play.google.com/store/apps/details?id=com.simjessimsol.simcv&hl=en",
+      "title": "Android"
+    }]
+  }, {
+    "title": "SimCV Game",
+    "tags": "Android",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/OpenCV-Bachelor",
+      "title": "Github"
+    }, {
+      "link": "https://www.youtube.com/watch?v=OY1HrQPOHJY",
+      "title": "Youtube"
+    }, {
+      "link": "https://play.google.com/store/apps/details?id=com.simjessimsol.simcvgame.android&hl=en",
+      "title": "Android"
+    }]
+  }, {
+    "title": "pictureSort",
+    "tags": "Desktop app, C#",
+    "description": "",
+    "links": [{
+      "link": "https://github.com/simjes/pictureSort",
+      "title": "Github"
+    }]
+  }, {
+    "title": "Firestorm",
+    "tags": "Android, Raspberry PI, Go, Python",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/simjes/Firestorm",
+      "title": "Github"
+    }, {
+      "link": "https://www.youtube.com/watch?v=aHwYtt6lNsw",
+      "title": "Youtube"
+    }]
+  }, {
+    "title": "Photo  Viewer",
+    "tags": "Desktop client and server. Java",
+    "description": "",
+    "image": "",
+    "links": [{
+      "link": "https://github.com/snorheim/DAT210G",
+      "title": "Github"
+    }]
+  }]
+}
