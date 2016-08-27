@@ -25,6 +25,9 @@
     "links": [{
       "link": "https://github.com/simjes/dhis2-tools",
       "title": "Github"
+    }, {
+      "link": "https://launchpad.net/~simjes91/+archive/ubuntu/dhis2-tools",
+      "title": "Launchpad"
     }]
   }, {
     "title": "ShopList",
