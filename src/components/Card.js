@@ -19,7 +19,9 @@ class Card extends React.Component {
                 <div className="card">
                     <div className="card-image">
                         <img src={fillerImage} />
-                        <span className="card-title">{this.props.content.title}</span>
+                        <span className="card-title">{this.props.content.title}
+                            <p>{this.props.content.tags}</p>
+                        </span>
                     </div>
                     <div className="card-content">
                         <p>{this.props.content.description}</p>

@@ -25,6 +25,9 @@
     "links": [{
       "link": "https://github.com/simjes/ngMaterial-website",
       "title": "Github"
+    }, {
+      "link": "http://simjes.github.io/ngMaterial-website",
+      "title": "Webpage"
     }]
   }, {
     "title": "DHIS2 tools",
