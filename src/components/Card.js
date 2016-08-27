@@ -1,6 +1,5 @@
 import React from 'react';
 import 'styles/MaterializecssCard.scss';
-var fillerImage = require('../images/firestorm.png');
 
 class Card extends React.Component {
     renderLinks(links) {
@@ -12,14 +11,14 @@ class Card extends React.Component {
     }
 
     render() {
-        //TODO: add tags    <img src={this.props.content.image} />
         const links = this.renderLinks(this.props.content.links);
         return (
             <div className="bottom-card-filler">
                 <div className="card">
                     <div className="card-image">
                         <img src={this.props.content.image} />
-                        <span className="card-title">{this.props.content.title}
+                        <span className="card-title">
+                            {this.props.content.title}
                             <p>{this.props.content.tags}</p>
                         </span>
                     </div>
