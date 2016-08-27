@@ -3,7 +3,7 @@
     "title": "WeatherFuse",
     "tags": "Fuse, OpenWeatherMap API",
     "description": "Cross-platform app to check the weather based on your GPS location, uses data from OpenWeatherMap.org. Testing out Fuse for building native cross-platform apps.",
-    "image": "",
+    "image": "../images/weatherfuse.png",
     "links": [{
       "link": "https://github.com/simjes/WeatherFuse",
       "title": "Github"
@@ -12,28 +12,16 @@
     "title": "ShopListSwift",
     "tags": "Swift, iOS, Realm",
     "description": "iOS application for writing down notes and gorceries. Stores the data in a Realm database.",
-    "image": "",
+    "image": "../images/shoplistSwift.png",
     "links": [{
       "link": "https://github.com/simjes/ShopListSwift",
       "title": "Github"
     }]
   }, {
-    "title": "Angular Webpage",
-    "tags": "AngularJS",
-    "description": "Portfolio webpage made with AngularJS and Angular Material.",
-    "image": "",
-    "links": [{
-      "link": "https://github.com/simjes/ngMaterial-website",
-      "title": "Github"
-    }, {
-      "link": "http://simjes.github.io/ngMaterial-website",
-      "title": "Webpage"
-    }]
-  }, {
     "title": "DHIS2 tools",
     "tags": "Ubuntu Package",
     "description": "Updating the dhis2-tools Ubuntu package. dhis2-tools is a collection of tools and utilities for installing and managing DHIS2 applications on an Ubuntu server.",
-    "image": "",
+    "image": "../images/dhis2tools.png",
     "links": [{
       "link": "https://github.com/simjes/dhis2-tools",
       "title": "Github"
@@ -42,7 +30,7 @@
     "title": "ShopList",
     "tags": "Android",
     "description": "Shopping list application for Android.",
-    "image": "",
+    "image": "../images/shoplist.png",
     "links": [{
       "link": "https://github.com/simjes/ShopList",
       "title": "Github"
@@ -51,16 +39,40 @@
       "title": "Android"
     }]
   }, {
+    "title": "pictureSort",
+    "tags": "C#",
+    "description": "Makes a copy of all the unique pictures in the Windows picture folder and sorts them in the a new folder. In the new folder the pictures are put in folders sorted by date of when the pictures was taken.",
+    "image": "../images/pictureSort.png",
+    "links": [{
+      "link": "https://github.com/simjes/pictureSort",
+      "title": "Github"
+    }]
+  }, {
+    "title": "Angular Webpage",
+    "tags": "AngularJS",
+    "description": "Portfolio webpage made with AngularJS and Angular Material.",
+    "image": "../images/ngmaterial.png",
+    "links": [{
+      "link": "https://github.com/simjes/ngMaterial-website",
+      "title": "Github"
+    }, {
+      "link": "http://simjes.github.io/ngMaterial-website",
+      "title": "Webpage"
+    }]
+  }, {
     "title": "Geek Events App",
     "tags": "Ionic, Facebook Graph API",
     "description": "Cross-platform application for browsing events. The user can browse events by categories and by local events. Uses Facebook login for adding new events.",
-    "image": "",
-    "links": []
+    "image": "../images/geventsapp.png",
+    "links": [{
+      "link": "https://github.com/simjes/gevents_app",
+      "title": "Github"
+    }]
   }, {
     "title": "Event Server",
     "tags": "Node, MongoDB",
     "description": "RESTful server for storing events. Saves the data in MongoDB.",
-    "image": "",
+    "image": "../images/geventsserver.png",
     "links": [{
       "link": "https://github.com/simjes/gevents_server",
       "title": "Github"
@@ -69,7 +81,7 @@
     "title": "Organisation Unit Manager",
     "tags": "DHIS2 WebApp, Angular, DHIS2 API",
     "description": "WebApp for DHIS2. Can be used to browse, edit and add organisational units in DHIS2.",
-    "image": "",
+    "image": "../images/dhis2.png",
     "links": [{
       "link": "https://github.com/simjes/dhis2-orgunit",
       "title": "Github"
@@ -78,7 +90,7 @@
     "title": "Streemer",
     "tags": "Ionic, Twitch API, Hitbox API",
     "description": "Cross-platform application for watching streams from different streaming website.",
-    "image": "",
+    "image": "../images/streemer.png",
     "links": [{
       "link": "https://github.com/simjes/Streemer",
       "title": "Github"
@@ -87,7 +99,7 @@
     "title": "SimCV",
     "tags": "Android, OpenCV",
     "description": "Uses OpenCV library on Android for face tracking, circle detection, color tracking and more. This was made as part of my bachelor thesis.",
-    "image": "",
+    "image": "../images/simcv.png",
     "links": [{
       "link": "https://github.com/simjes/OpenCV-Bachelor",
       "title": "Github"
@@ -102,7 +114,7 @@
     "title": "SimCV Game",
     "tags": "Android, OpenCV, LibGDX",
     "description": "A game made with LibGDX and OpenCV. It uses the Android camera to track a specified color, when the user moves the color the ingame character moves.",
-    "image": "",
+    "image": "../images/simcvgame.png",
     "links": [{
       "link": "https://github.com/simjes/OpenCV-Bachelor",
       "title": "Github"
@@ -114,18 +126,10 @@
       "title": "Android"
     }]
   }, {
-    "title": "pictureSort",
-    "tags": "C#",
-    "description": "Makes a copy of all the unique pictures in the Windows picture folder and sorts them in the a new folder. In the new folder the pictures are put in folders sorted by date of when the pictures was taken.",
-    "links": [{
-      "link": "https://github.com/simjes/pictureSort",
-      "title": "Github"
-    }]
-  }, {
     "title": "Firestorm",
     "tags": "Android, Raspberry PI, Go, Python",
     "description": "A remote control for a gas fireplace. The Raspberry Pi runs a Python or a Golang HTTP server to listen for commands from a Android application. Based on the request it recieves, the Raspberry Pi turns the heat up or down.",
-    "image": "",
+    "image": "../images/firestorm.png",
     "links": [{
       "link": "https://github.com/simjes/Firestorm",
       "title": "Github"
@@ -137,7 +141,7 @@
     "title": "Photo  Viewer",
     "tags": "Java, Hibernate, SQLite, Client, Server",
     "description": "A desktop application that can be used to view and upload pictures to a server, as well as edit metadata of the pictures. The pictures can be filtered by metadata and by the folders they are located in. The server uses a SQLite database to keep track of all the information.",
-    "image": "",
+    "image": "../images/photoviewer.png",
     "links": [{
       "link": "https://github.com/snorheim/DAT210G",
       "title": "Github"
