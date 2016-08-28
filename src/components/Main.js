@@ -4,6 +4,7 @@ import React from 'react';
 import HeaderBar from 'components/Header';
 import CardContainer from 'components/CardContainer';
 import 'styles/App.scss';
+import FooterBar from 'components/Footer';
 
 class AppComponent extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class AppComponent extends React.Component {
         <div>
             <HeaderBar />
             <CardContainer />
+            <FooterBar />
         </div>
     );
   }
