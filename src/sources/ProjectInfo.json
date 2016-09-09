@@ -42,15 +42,6 @@
       "title": "Android"
     }]
   }, {
-    "title": "pictureSort",
-    "tags": "C#",
-    "description": "Makes a copy of all the unique pictures in the Windows picture folder and sorts them in the a new folder. In the new folder the pictures are put in folders sorted by date of when the pictures was taken.",
-    "image": "../images/pictureSort.png",
-    "links": [{
-      "link": "https://github.com/simjes/pictureSort",
-      "title": "Github"
-    }]
-  }, {
     "title": "Angular Webpage",
     "tags": "AngularJS",
     "description": "Portfolio webpage made with AngularJS and Angular Material.",
@@ -78,6 +69,15 @@
     "image": "../images/geventsserver.png",
     "links": [{
       "link": "https://github.com/simjes/gevents_server",
+      "title": "Github"
+    }]
+  }, {
+    "title": "pictureSort",
+    "tags": "C#",
+    "description": "Makes a copy of all the unique pictures in the Windows picture folder and sorts them in the a new folder. In the new folder the pictures are put in folders sorted by date of when the pictures was taken.",
+    "image": "../images/pictureSort.png",
+    "links": [{
+      "link": "https://github.com/simjes/pictureSort",
       "title": "Github"
     }]
   }, {

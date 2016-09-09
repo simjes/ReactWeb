@@ -13,7 +13,7 @@ class Card extends React.Component {
     render() {
         const links = this.renderLinks(this.props.content.links);
         return (
-            <div className="bottom-card-filler">
+            <div className="card-box">
                 <div className="card">
                     <div className="card-image">
                         <img src={this.props.content.image} />

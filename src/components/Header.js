@@ -8,7 +8,7 @@ import {Appbar, Container, Row, Col} from 'muicss/react';
 class HeaderBar extends React.Component {
     render() {
         return (
-            <Appbar className="mui--z2 header">
+            <Appbar className="header">
                 <Container>
                     <Row>
                         <a href="#" className="mui--visible-xs-block mui--text-center"><div className="header-logo" /></a>
