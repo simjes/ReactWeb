@@ -2,16 +2,8 @@ import React from 'react';
 import 'styles/MaterializecssCard.scss';
 
 class Card extends React.Component {
-    renderLinks(links) {
-        var aTags = [];
-        links.forEach( (linkInfo, index) => {
-            aTags.push(<a href={linkInfo.link} target="_blank" key={index}>{linkInfo.title}</a>);
-        });
-        return aTags;
-    }
-
     render() {
-        const links = this.renderLinks(this.props.content.links);
+        const links = this.props.content.links;
         return (
             <div className="card-box">
                 <div className="card">
@@ -26,7 +18,9 @@ class Card extends React.Component {
                         <p>{this.props.content.description}</p>
                     </div>
                     <div className="card-action mui--text-center">
-                        {links}
+                        {links.map((link, i) => {
+                            return <a href={link.link} target="_blank" key={i}>{link.title}</a>
+                        })}
                     </div>
                 </div>
             </div>
